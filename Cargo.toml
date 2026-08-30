@@ -1,0 +1,23 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/khatam-era",
+    "crates/khatam-rules",
+    "crates/khatam-zone",
+    "crates/khatam-chain",
+    "crates/khatam-emulator",
+    "crates/khatam-build",
+    "crates/khatam-sign",
+    "crates/khatam",
+    "crates/khatam-cli",
+    "crates/khatam-conformance",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "UNLICENSED"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
